@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="איור זמני של קינוח בננה">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3C4"/><stop offset="1" stop-color="#FFF8EC"/></linearGradient>
+    <clipPath id="dome"><path d="M200 560 C200 330 300 220 400 220 C500 220 600 330 600 560 Z"/></clipPath>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="130" cy="140" r="90" fill="#fff" opacity=".45"/>
+  <circle cx="690" cy="250" r="60" fill="#fff" opacity=".4"/>
+  <ellipse cx="400" cy="590" rx="270" ry="38" fill="#F2C94C" opacity=".18"/>
+  <ellipse cx="400" cy="570" rx="250" ry="34" fill="#F6D7A7"/>
+  <ellipse cx="400" cy="560" rx="250" ry="30" fill="#FFE9BF"/>
+  <path d="M200 560 C200 330 300 220 400 220 C500 220 600 330 600 560 Z" fill="#F2C94C"/>
+  <g clip-path="url(#dome)"><ellipse cx="330" cy="330" rx="60" ry="120" fill="#fff" opacity=".18" transform="rotate(-20 330 330)"/></g>
+  <g fill="#E0A800" stroke="#fff" stroke-width="3">
+    <circle cx="360" cy="210" r="22"/><circle cx="400" cy="195" r="22"/><circle cx="440" cy="210" r="22"/>
+    <circle cx="380" cy="232" r="22"/><circle cx="420" cy="232" r="22"/><circle cx="400" cy="256" r="22"/>
+  </g>
+  <path d="M390 180 l10 -34 l12 34 z" fill="#2F9E44"/>
+  <rect x="270" y="690" width="260" height="44" rx="22" fill="#fff" opacity=".85"/>
+  <text x="400" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#7A4A57">תמונה זמנית</text>
+</svg>
