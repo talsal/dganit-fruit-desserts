@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>קינוחי פירות ביתיים של דגנית | כשר · חלב ישראל</title>
+  <meta name="description" content="קינוחי פירות קרמיים ועשירים במגוון טעמים, בהכנה ביתית של דגנית – כל קינוח 40 ₪, כשר · חלב ישראל. מזמינים בטלפון 052-867-4996 או בוואטסאפ.">
+  <meta name="theme-color" content="#C2255C">
+
+  <!-- Open Graph (WhatsApp / Facebook link previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="קינוחי פירות ביתיים של דגנית">
+  <meta property="og:description" content="כל קינוח 40 ₪ · כשר · חלב ישראל. מזמינים בטלפון או בוואטסאפ.">
+  <meta property="og:url" content="https://talsal.github.io/dganit-fruit-desserts/">
+  <meta property="og:image" content="https://talsal.github.io/dganit-fruit-desserts/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "קינוחי פירות ביתיים של דגנית",
+    "founder": "דגנית",
+    "telephone": "+972528674996",
+    "servesCuisine": "קינוחי פירות",
+    "priceRange": "40 ₪ לקינוח",
+    "url": "https://talsal.github.io/dganit-fruit-desserts/",
+    "image": "https://talsal.github.io/dganit-fruit-desserts/images/og-image.jpg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#desserts">דלג לתוכן</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="קינוחי פירות של דגנית – לראש העמוד">
+        <span class="brand-mark" aria-hidden="true">🍓</span>
+        <span>קינוחי הפירות של דגנית</span>
+      </a>
+      <nav class="main-nav" aria-label="ניווט ראשי">
+        <a href="#desserts">הקינוחים</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#how">איך מזמינים</a>
+        <a href="#about">על דגנית</a>
+        <a class="btn btn-small btn-primary" href="#order">להזמנה</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">קינוחי פירות קרמיים ועשירים במגוון טעמים!</p>
+          <h1 id="hero-title">קינוחי פירות ביתיים של דגנית</h1>
+          <p class="hero-sub">כל קינוח <span data-price></span> ₪ · כשר · חלב ישראל</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="tel:+972528674996">התקשרו להזמנה</a>
+            <a class="btn btn-whatsapp btn-large" href="https://wa.me/972528674996" target="_blank" rel="noopener">הזמינו בוואטסאפ</a>
+          </div>
+        </div>
+        <!-- Hero photos: these reuse the dessert photos; swap the files in images/ to change them -->
+        <div class="hero-photos" aria-hidden="false">
+          <img class="hp hp-a" src="images/strawberry.webp" alt="קינוחי תות בצורת לב בקופסה ורודה" width="600" height="600" fetchpriority="high">
+          <img class="hp hp-b" src="images/mango.webp" alt="חתך של קינוח מנגו עם לב מנגו" width="640" height="640">
+          <img class="hp hp-c" src="images/coffee-bean.webp" alt="קינוח פול קפה מצופה שוקולד" width="1000" height="1000">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Desserts -->
+    <section id="desserts" class="section" aria-labelledby="desserts-title">
+      <div class="container">
+        <h2 id="desserts-title" class="section-title">הקינוחים שלנו</h2>
+        <p class="section-lead">מנגו, תות, פטל, קפה, בננה ואוכמניות. כל קינוח <span data-price></span> ₪ – מחיר אחד לכולם.</p>
+        <ul id="dessert-grid" class="grid" role="list">
+          <li class="grid-loading">טוען קינוחים…</li>
+        </ul>
+        <noscript><p class="noscript">כדי לראות את הקינוחים ולהזמין דרך האתר יש להפעיל JavaScript, או פשוט להתקשר: <a href="tel:+972528674996">052-867-4996</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Gallery (data/desserts.js → SITE.gallery) -->
+    <section id="gallery" class="section section-tint" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="section-title">גלריה</h2>
+        <p class="section-lead">הצצה לקינוחים מהמטבח של דגנית. לחצו על תמונה להגדלה.</p>
+        <ul id="gallery-grid" class="gallery" role="list"></ul>
+      </div>
+    </section>
+
+    <!-- 3. How to order -->
+    <section id="how" class="section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title">איך מזמינים?</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>בוחרים קינוחים</h3>
+            <p>עוברים על הקינוחים ולוחצים "הוסף להזמנה" על מה שמתחשק לכם.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>מתקשרים או שולחים בקשה</h3>
+            <p>מתקשרים לדגנית, או ממלאים את הטופס ושולחים אותו בוואטסאפ בלחיצה אחת.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>איסוף או משלוח</h3>
+            <!-- Text from Dganit's flyer. TODO: confirm whether delivery is offered. -->
+            <p>איסוף ממבוא דוב רוזנשטיין, ירושלים. מזמינים שבוע מראש, ונהנים.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. Order form -->
+    <section id="order" class="section section-tint" aria-labelledby="order-title">
+      <div class="container narrow">
+        <h2 id="order-title" class="section-title">בקשת הזמנה</h2>
+        <p class="section-lead">ממלאים, לוחצים שלח, ונפתחת הודעת וואטסאפ מוכנה לדגנית. אין צורך בהרשמה.</p>
+
+        <form id="order-form" class="order-form" novalidate>
+          <div class="field">
+            <label for="f-name">שם מלא <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+            <p class="error" id="err-name" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="f-phone">טלפון <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="050-0000000" required aria-describedby="err-phone">
+            <p class="error" id="err-phone" role="alert"></p>
+          </div>
+
+          <fieldset class="field qty-fieldset" aria-describedby="err-items">
+            <legend>כמה מכל קינוח? <span class="req" aria-hidden="true">*</span></legend>
+            <div id="qty-list" class="qty-list"></div>
+            <p class="error" id="err-items" role="alert"></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-date">תאריך רצוי <span class="req" aria-hidden="true">*</span></label>
+            <small class="hint">הזמנה שבוע מראש (המוקדם ביותר: <span id="min-date-text"></span>)</small>
+            <input id="f-date" name="date" type="date" required aria-describedby="err-date">
+            <p class="error" id="err-date" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="f-notes">הערות (אופציונלי)</label>
+            <textarea id="f-notes" name="notes" rows="3" placeholder="איסוף/משלוח, כתובת, אלרגיות, בקשות מיוחדות…"></textarea>
+          </div>
+
+          <div class="total-box" aria-live="polite">
+            <span>סה״כ לתשלום</span>
+            <strong id="total-output">0 ₪</strong>
+            <small id="total-detail">לא נבחרו קינוחים</small>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-large btn-block">שלחו בקשה בוואטסאפ</button>
+          <p class="form-note">או התקשרו ישירות: <a href="tel:+972528674996">052-867-4996</a></p>
+          <p id="send-status" class="send-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5. About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container narrow about">
+        <h2 id="about-title" class="section-title">קצת על דגנית</h2>
+        <!-- TODO: replace with Dganit's own words / story -->
+        <p>אני דגנית, ואני מכינה קינוחי פירות ביתיים בבית שלי, בכל פעם בכמויות קטנות ובהרבה אהבה. הקינוחים מתחילים מפירות טריים וחומרי גלם טובים, ונעשים לאט ובתשומת לב לכל פרט, כמו שהייתי מכינה למשפחה שלי.</p>
+        <p class="kosher">✓ כשר · חלב ישראל</p>
+        <!-- TODO: add extra kosher wording if Dganit wants it. Do not name a specific hechsher unless she asks. -->
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">קינוחי פירות ביתיים · דגנית</p>
+        <p class="footer-kosher">כשר · חלב ישראל</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+972528674996">📞 052-867-4996</a>
+        <a href="https://wa.me/972528674996" target="_blank" rel="noopener">💬 וואטסאפ</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky bottom bar (mobile only) -->
+  <nav class="sticky-bar" aria-label="יצירת קשר מהירה">
+    <a class="btn btn-primary" href="tel:+972528674996">התקשרו</a>
+    <a class="btn btn-whatsapp" href="https://wa.me/972528674996" target="_blank" rel="noopener">וואטסאפ</a>
+  </nav>
+
+  <!-- "Added to order" toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Gallery lightbox -->
+  <dialog id="lightbox" class="lightbox" aria-label="תמונה מוגדלת">
+    <form method="dialog"><button class="lightbox-close" aria-label="סגירה">✕</button></form>
+    <img id="lightbox-img" alt="">
+  </dialog>
+
+  <script src="data/desserts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
