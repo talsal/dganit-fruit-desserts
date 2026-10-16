@@ -251,3 +251,22 @@ body { padding-bottom: 76px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Analytics consent banner */
+.consent-banner {
+  position: fixed; inset-inline: 12px; bottom: 84px; z-index: 65; margin-inline: auto; max-width: 560px;
+  background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+}
+.consent-banner p { margin: 0 0 10px; font-size: 0.9375rem; }
+.consent-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.consent-actions .btn { flex: 1 1 120px; }
+.has-consent-banner .toast { bottom: 190px; }
+.link-button {
+  background: none; border: 0; color: #fff; font: inherit; text-decoration: underline; cursor: pointer;
+  min-height: 44px; padding: 0 4px;
+}
+@media (min-width: 900px) {
+  .consent-banner { bottom: 16px; inset-inline-start: auto; inset-inline-end: 16px; margin-inline: 0; }
+  .has-consent-banner .toast { bottom: 24px; }
+}

@@ -221,6 +221,7 @@
     var msg = buildMessage({ name: name, phone: phone, date: date, notes: $("#f-notes").value.trim() });
     var url = "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent(msg);
     var w = window.open(url, "_blank");
+    if (window.track) window.track("generate_lead", { value: totals().sum, currency: "ILS", dessert_count: totals().count });
     if (w) w.opener = null; // (the "noopener" feature would make window.open always return null)
     status.textContent = "";
     status.appendChild(document.createTextNode(w ? "נפתח וואטסאפ עם ההודעה – נא ללחוץ שם על שליחה. " : "לחצו כדי לפתוח את ההודעה בוואטסאפ: "));

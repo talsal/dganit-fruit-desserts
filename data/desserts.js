@@ -7,6 +7,9 @@ window.SITE = {
   // Note: the <meta> descriptions in index.html are static text – update them by hand if this changes.
   price: 40,
 
+  // Google Analytics 4 Measurement ID (starts with "G-"). Empty string = analytics off.
+  analyticsId: "G-J453ZT58M3",
+
   // WhatsApp number, international format without "+" (used by the order form).
   whatsapp: "972528674996",
 
