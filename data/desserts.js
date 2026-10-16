@@ -15,7 +15,7 @@ window.SITE = {
 
   // To add a dessert, copy one block below. `id` = file name of the photo, `image` = path to it.
   // Flavors come from Dganit's flyer. TODO: confirm names/descriptions with her.
-  // TODO: banana and blueberry still use placeholder illustrations – replace with real photos.
+  // TODO: blueberry still uses a placeholder illustration – replace with a real photo.
   desserts: [
     {
       id: "mango",
@@ -29,15 +29,14 @@ window.SITE = {
       name: "קינוח תות",
       description: "קינוח בצורת לב בציפוי ורוד, עם קרם ולב פירות אדומים.",
       image: "images/strawberry.webp",
-      alt: "קינוחי תות בצורת לב בקופסה ורודה",
+      alt: "קינוח תות בצורת לב בציפוי ורוד על בסיס זהב",
     },
     {
       id: "raspberry",
       name: "קינוח פטל",
-      // TODO: replace with a sharper original photo (the current one is cropped from the flyer)
       description: "קינוח פטל בציפוי אדום, עם קרם וממרח פטל חמצמץ.",
       image: "images/raspberry.webp",
-      alt: "שני קינוחי פטל בציפוי אדום",
+      alt: "קינוח פטל בצורת פטל עם ציפוי אדום על בסיס זהב",
     },
     {
       id: "coffee-bean",
@@ -49,10 +48,9 @@ window.SITE = {
     {
       id: "banana",
       name: "קינוח בננה",
-      // TODO: add a real photo (images/banana.webp) and confirm description
       description: "קרם בננה רך ומתוק בציפוי עדין.",
-      image: "images/banana-placeholder.svg",
-      alt: "איור זמני של קינוח בננה – תמונה אמיתית תתווסף בקרוב",
+      image: "images/banana.webp",
+      alt: "שני קינוחי בננה בציפוי צהוב בהיר",
     },
     {
       id: "blueberry",
@@ -66,6 +64,10 @@ window.SITE = {
 
   // Photos shown in the gallery strip. TODO: add / replace with more favourites.
   gallery: [
+    { image: "images/gallery/all-flavors-box.webp", alt: "קופסה פתוחה עם כל הטעמים: מנגו, תות, בננה, פטל, פול קפה וקינוח בציפוי ירוק" },
+    { image: "images/gallery/all-flavors-box-2.webp", alt: "שישה קינוחי פירות שונים בקופסה: מנגו, תות, פול קפה, פטל, בננה וקינוח ירוק" },
+    { image: "images/gallery/all-flavors-closed-box.webp", alt: "קופסה ורודה סגורה עם שישה קינוחים במגוון טעמים" },
+    { image: "images/gallery/all-flavors-closed-box-2.webp", alt: "קופסת קינוחים ורודה עם חלון, ובתוכה קינוחים בצורת פירות" },
     { image: "images/gallery/coffee-box.webp", alt: "קופסה ורודה עם שישה קינוחי פול קפה" },
     { image: "images/gallery/strawberry-cut.webp", alt: "חתך של קינוח תות עם שכבות קרם וריבת פירות" },
     { image: "images/gallery/mango-cut.webp", alt: "חתך של קינוח מנגו עם לב מנגו" },
